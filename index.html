@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Viewer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsonlint/1.6.0/jsonlint.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.1.9/jsoneditor.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.1.9/jsoneditor.min.js"></script>
+</head>
+<body>
+    <div id="editor"></div>
+    <script>
+        $.getJSON("data.json", function(data) {
+            var container = document.getElementById("editor");
+            var options = {};
+            var editor = new JSONEditor(container, options);
+            editor.set(data);
+        });
+    </script>
+</body>
+</html>
