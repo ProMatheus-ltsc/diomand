@@ -1,4 +1,12 @@
 [
-  {"gray_enable":true},
-  {}
+  {
+    "abTestBucketRate": 0,
+    "whiteList": [],
+    "key": ""
+  },
+  {
+    "abTestBucketRate": 0,
+    "whiteList": [],
+    "key": ""
+  }
 ]
